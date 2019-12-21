@@ -12,9 +12,12 @@ pool:
 steps:
 - task: Xcode@5
   inputs:
-    actions: 'build'
-    scheme: ''
+    actions: 'clean build analyze archive'
+    scheme: 'Selfiegram'
     sdk: 'iphoneos'
-    configuration: 'Release'
+    configuration: 'Debug'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
+    useXcpretty: 'false'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
+    args: '-archivePath $(agent.buildDirectory)/Selfiegram'
+
