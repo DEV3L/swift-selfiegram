@@ -19,7 +19,7 @@ steps:
     scheme: 'Selfiegram'
     sdk: 'iphoneos'
     configuration: 'Debug'
-    xcWorkspacePath: 'Selfiegram.xcodeproj/project.xcworkspace'
+    xcWorkspacePath: 'Selfiegram.xcworkspace'
     useXcpretty: 'false'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
     args: '-archivePath $(agent.buildDirectory)/Selfiegram'
