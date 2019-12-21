@@ -21,3 +21,15 @@ steps:
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
     args: '-archivePath $(agent.buildDirectory)/Selfiegram'
 
+- task: ArchiveFiles@2
+  displayName: 'Package .xcarchive into a zip file'
+  inputs:
+    rootFolderOrFile: '$(agent.buildDirectory)/Selfiegram.xcarchive/'
+    archiveFile: '$(build.artifactStagingDirectory)/Selfiegram.xcarchive.zip'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: '$(build.artifactStagingDirectory)/Selfiegram.xcarchive.zip'
+    artifactName: 'xcarchive-files'
+    artifactType: 'container'
+
