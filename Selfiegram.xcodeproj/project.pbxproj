@@ -10,6 +10,7 @@
 		61B390620AAC3C91A4DF0BAA /* Pods_SelfiegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD1BE3DC073AF71DDD846A6 /* Pods_SelfiegramTests.framework */; };
 		7778CAB70611893DC9237FAA /* Pods_Selfiegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D86A1356BCAAAAFE31C71B /* Pods_Selfiegram.framework */; };
 		A0FA457B3664F455A5D44902 /* Pods_Selfiegram_SelfiegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F423A70B8F62EB99FEA4D9EA /* Pods_Selfiegram_SelfiegramUITests.framework */; };
+		E90345D323AFF8560026D9C2 /* SelfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */; };
 		E933B2F623AFDF8000DA3A46 /* SelfieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933B2F523AFDF8000DA3A46 /* SelfieStore.swift */; };
 		E9854DFB23AD9813004FC95D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854DFA23AD9813004FC95D /* AppDelegate.swift */; };
 		E9854DFD23AD9813004FC95D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854DFC23AD9813004FC95D /* SceneDelegate.swift */; };
@@ -18,7 +19,7 @@
 		E9854E0423AD9813004FC95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9854E0223AD9813004FC95D /* Main.storyboard */; };
 		E9854E0623AD9815004FC95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9854E0523AD9815004FC95D /* Assets.xcassets */; };
 		E9854E0923AD9815004FC95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9854E0723AD9815004FC95D /* LaunchScreen.storyboard */; };
-		E9854E1423AD9815004FC95D /* SelfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1323AD9815004FC95D /* SelfiegramTests.swift */; };
+		E9854E1423AD9815004FC95D /* SelfieStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */; };
 		E9854E1F23AD9815004FC95D /* SelfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		D9C64939A0DFE16C21EECAAF /* Pods-Selfiegram-SelfiegramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Selfiegram-SelfiegramUITests.release.xcconfig"; path = "Target Support Files/Pods-Selfiegram-SelfiegramUITests/Pods-Selfiegram-SelfiegramUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DDD1BE3DC073AF71DDD846A6 /* Pods_SelfiegramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelfiegramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C078097486EDCFC4B08693 /* Pods-SelfiegramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfiegramTests.release.xcconfig"; path = "Target Support Files/Pods-SelfiegramTests/Pods-SelfiegramTests.release.xcconfig"; sourceTree = "<group>"; };
+		E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramTests.swift; sourceTree = "<group>"; };
 		E933B2F523AFDF8000DA3A46 /* SelfieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelfieStore.swift; path = "/Users/dev3l/workspace/swift/swift-selfiegram/Selfiegram/Selfiegram/SelfieStore.swift"; sourceTree = "<absolute>"; };
 		E9854DF723AD9813004FC95D /* Selfiegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Selfiegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9854DFA23AD9813004FC95D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		E9854E0823AD9815004FC95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9854E0A23AD9815004FC95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9854E0F23AD9815004FC95D /* SelfiegramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfiegramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9854E1323AD9815004FC95D /* SelfiegramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramTests.swift; sourceTree = "<group>"; };
+		E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieStoreTests.swift; sourceTree = "<group>"; };
 		E9854E1523AD9815004FC95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9854E1A23AD9815004FC95D /* SelfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramUITests.swift; sourceTree = "<group>"; };
@@ -149,8 +151,9 @@
 		E9854E1223AD9815004FC95D /* SelfiegramTests */ = {
 			isa = PBXGroup;
 			children = (
-				E9854E1323AD9815004FC95D /* SelfiegramTests.swift */,
+				E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */,
 				E9854E1523AD9815004FC95D /* Info.plist */,
+				E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */,
 			);
 			path = SelfiegramTests;
 			sourceTree = "<group>";
@@ -389,7 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9854E1423AD9815004FC95D /* SelfiegramTests.swift in Sources */,
+				E90345D323AFF8560026D9C2 /* SelfiegramTests.swift in Sources */,
+				E9854E1423AD9815004FC95D /* SelfieStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
