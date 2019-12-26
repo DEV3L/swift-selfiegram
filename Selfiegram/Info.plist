@@ -63,6 +63,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We use the camera to take those sweet, sweet selfies</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We use the library to save your sweet, sweet selfies</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
