@@ -1,7 +1,7 @@
 import UIKit
 
 class SelfieListViewController: UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-    var detailViewController: DetailViewController? = nil
+    var detailViewController: SelfieDetailViewController? = nil
     var selfies : [Selfie] = []
     
     override func viewDidLoad() {
@@ -25,7 +25,7 @@ class SelfieListViewController: UITableViewController, UINavigationControllerDel
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count - 1]
                 as? UINavigationController)?.topViewController
-                as? DetailViewController
+                as? SelfieDetailViewController
         }
     }
     
@@ -75,6 +75,7 @@ class SelfieListViewController: UITableViewController, UINavigationControllerDel
     }()
     
     override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
         super.viewWillAppear(animated)
     }
@@ -125,14 +126,16 @@ class SelfieListViewController: UITableViewController, UINavigationControllerDel
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            //            if let indexPath = tableView.indexPathForSelectedRow {
-            //                let object = objects[indexPath.row] as! NSDate
-            //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-            //                controller.detailItem = object
-            //                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-            //                controller.navigationItem.leftItemsSupplementBackButton = true
-            //                detailViewController = controller
-            //            }
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let selfie = selfies[indexPath.row]
+                if let controller = (segue.destination as? UINavigationController)?
+                    .topViewController as? SelfieDetailViewController
+                {
+                    controller.selfie = selfie
+                    controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                    controller.navigationItem.leftItemsSupplementBackButton = true
+                }
+            }
         }
     }
     
