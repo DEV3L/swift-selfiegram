@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selfie Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nso-IE-lSt">
-                                <rect key="frame" x="16" y="96" width="382" height="30"/>
+                                <rect key="frame" x="16" y="96" width="315" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="38T-13-EUw"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-ri-4Dz">
-                                <rect key="frame" x="16" y="134" width="382" height="21"/>
+                                <rect key="frame" x="16" y="134" width="315" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="MCn-s0-o1u"/>
                                 </constraints>
@@ -53,24 +53,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-WS-BD3">
-                                <rect key="frame" x="16" y="163" width="382" height="691"/>
+                                <rect key="frame" x="16" y="171" width="382" height="683"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="6ww-WS-BD3" secondAttribute="height" multiplier="382:691" id="S1u-HA-0ty"/>
+                                    <constraint firstAttribute="width" secondItem="6ww-WS-BD3" secondAttribute="height" multiplier="382:691" constant="4.4225759768451667" id="S1u-HA-0ty"/>
                                 </constraints>
                             </imageView>
+                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNQ-mt-qmj">
+                                <rect key="frame" x="339" y="96" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="1K5-SB-daw"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="wNQ-mt-qmj" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="8" id="18A-do-l4N"/>
                             <constraint firstItem="8z6-ri-4Dz" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="3H5-ff-6Mk"/>
                             <constraint firstItem="Nso-IE-lSt" firstAttribute="top" secondItem="VUw-jc-0yf" secondAttribute="top" constant="8" id="3wk-qP-f74"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="8z6-ri-4Dz" secondAttribute="trailing" constant="16" id="69y-4s-Gse"/>
+                            <constraint firstItem="6ww-WS-BD3" firstAttribute="top" secondItem="wNQ-mt-qmj" secondAttribute="bottom" constant="8" id="BXt-5b-tmT"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="6ww-WS-BD3" secondAttribute="trailing" constant="16" id="W7Q-43-hTB"/>
+                            <constraint firstItem="wNQ-mt-qmj" firstAttribute="leading" secondItem="8z6-ri-4Dz" secondAttribute="trailing" constant="8" id="XVa-uw-OWR"/>
                             <constraint firstItem="8z6-ri-4Dz" firstAttribute="top" secondItem="Nso-IE-lSt" secondAttribute="bottom" constant="8" id="cKE-S2-VGV"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="Nso-IE-lSt" secondAttribute="trailing" constant="16" id="dgC-k9-415"/>
-                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="6ww-WS-BD3" secondAttribute="trailing" constant="16" id="ihE-BD-K6e"/>
+                            <constraint firstItem="wNQ-mt-qmj" firstAttribute="leading" secondItem="Nso-IE-lSt" secondAttribute="trailing" constant="8" id="fFw-2v-jaC"/>
                             <constraint firstItem="VUw-jc-0yf" firstAttribute="bottom" secondItem="6ww-WS-BD3" secondAttribute="bottom" constant="8" id="ki3-a5-PM3"/>
+                            <constraint firstItem="VUw-jc-0yf" firstAttribute="trailing" secondItem="wNQ-mt-qmj" secondAttribute="trailing" constant="8" id="qw4-xV-ZZG"/>
                             <constraint firstItem="Nso-IE-lSt" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="rQW-3K-xhR"/>
-                            <constraint firstItem="6ww-WS-BD3" firstAttribute="top" secondItem="8z6-ri-4Dz" secondAttribute="bottom" constant="8" id="tuV-Qr-6zT"/>
                             <constraint firstItem="6ww-WS-BD3" firstAttribute="leading" secondItem="VUw-jc-0yf" secondAttribute="leading" constant="16" id="uQ4-vh-cBq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUw-jc-0yf"/>
@@ -79,6 +86,7 @@
                     <navigationItem key="navigationItem" title="Selfie" id="mOI-FS-AaM"/>
                     <connections>
                         <outlet property="dateCreatedLabel" destination="8z6-ri-4Dz" id="P7V-hI-G7t"/>
+                        <outlet property="mapView" destination="wNQ-mt-qmj" id="kVT-wB-2KW"/>
                         <outlet property="selfieImageView" destination="6ww-WS-BD3" id="itS-zm-l22"/>
                         <outlet property="selfieNameField" destination="Nso-IE-lSt" id="snZ-dJ-dbN"/>
                     </connections>

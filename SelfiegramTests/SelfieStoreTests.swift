@@ -2,7 +2,6 @@ import XCTest
 import UIKit
 import CoreLocation
 
-//@testable import Selfiegram
 @testable import Selfiegram
 
 class SelfitStoreTests: XCTestCase {
