@@ -37,6 +37,7 @@ class SelfieDetailViewController: UIViewController {
         selfieNameField.text = selfie.title
         dateCreatedLabel.text = dateFormatter.string(from: selfie.created)
         selfieImageView.image = selfie.image
+        
     }
     
     override func viewDidLoad() {
