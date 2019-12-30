@@ -105,6 +105,56 @@
             </objects>
             <point key="canvasLocation" x="708.69565217391312" y="128.57142857142856"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="e6Y-Fv-ssJ">
+            <objects>
+                <tableViewController title="Settings" id="5Uk-Wx-Mzf" customClass="SettingsTableViewController" customModule="Selfiegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WRg-uA-jzV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection id="4YF-gA-Fxk">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f8f-1o-ySZ">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f8f-1o-ySZ" id="114-e7-FDt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APe-Jj-Kne">
+                                                    <rect key="frame" x="22" y="13" width="111" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0FN-I1-NAW">
+                                                    <rect key="frame" x="345" y="7" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0FN-I1-NAW" secondAttribute="trailing" constant="20" id="2Az-2X-bjk"/>
+                                                <constraint firstItem="APe-Jj-Kne" firstAttribute="leading" secondItem="114-e7-FDt" secondAttribute="leadingMargin" constant="2" id="Mbz-rL-6Ud"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="APe-Jj-Kne" secondAttribute="bottom" constant="2" id="Pev-oX-I28"/>
+                                                <constraint firstItem="APe-Jj-Kne" firstAttribute="top" secondItem="114-e7-FDt" secondAttribute="topMargin" constant="2" id="qg0-v6-FBp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5Uk-Wx-Mzf" id="j9w-Vz-tlG"/>
+                            <outlet property="delegate" destination="5Uk-Wx-Mzf" id="t0T-0l-bVU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="7tA-e7-f1b"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSa-h1-vOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="-630"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
             <objects>
@@ -162,11 +212,19 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Selfies" id="Zdf-7t-Un8"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Selfies" id="Zdf-7t-Un8">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="mqP-xf-51X">
+                            <connections>
+                                <segue destination="5Uk-Wx-Mzf" kind="show" id="UHe-C4-fKj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="709" y="-630"/>
+            <point key="canvasLocation" x="708.69565217391312" y="-630.13392857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
