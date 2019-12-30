@@ -6,7 +6,7 @@ class SelfieDetailViewController: UIViewController {
     @IBOutlet weak var dateCreatedLabel: UILabel!
     @IBOutlet weak var selfieImageView: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
-    
+ 
     @IBAction func doneButtonTapped(_ sender: Any) {
         self.selfieNameField.resignFirstResponder()
         guard let selfie = selfie else
@@ -21,6 +21,20 @@ class SelfieDetailViewController: UIViewController {
         try? SelfieStore.shared.save(selfie: selfie)
     }
     
+    @IBAction func expandMap(_ sender: Any)
+    {
+        if let coordinate = self.selfie?.position?.location
+        {
+            let options = [
+                MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: coordinate.coordinate),
+                MKLaunchOptionsMapTypeKey: NSNumber(value: MKMapType.mutedStandard.rawValue)]
+            
+            let placemark = MKPlacemark(coordinate: coordinate.coordinate, addressDictionary: nil)
+            let item = MKMapItem(placemark: placemark)
+            item.name = selfie?.title
+            item.openInMaps(launchOptions: options)
+        }
+    }
     
     func configureView() {
         guard let selfie = selfie else

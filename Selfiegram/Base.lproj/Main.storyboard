@@ -54,15 +54,20 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6ww-WS-BD3">
                                 <rect key="frame" x="16" y="171" width="382" height="683"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="6ww-WS-BD3" secondAttribute="height" multiplier="382:691" constant="4.4225759768451667" id="S1u-HA-0ty"/>
                                 </constraints>
                             </imageView>
                             <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsCompass="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNQ-mt-qmj">
                                 <rect key="frame" x="339" y="96" width="67" height="67"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="1K5-SB-daw"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zkf-OC-7Gc" appends="YES" id="O78-XY-xgU"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -92,6 +97,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Zkf-OC-7Gc">
+                    <connections>
+                        <action selector="expandMap:" destination="JEX-9P-axG" id="jV0-GV-7Tw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="708.69565217391312" y="128.57142857142856"/>
         </scene>
