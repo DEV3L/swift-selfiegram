@@ -43,9 +43,7 @@ class SelfieListViewController:
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
     }
     
-    @objc
-    func createNewSelfie()
-    {
+    fileprivate func setLocation() {
         lastLocation = nil
         switch CLLocationManager.authorizationStatus() {
         case .denied, .restricted:
@@ -54,6 +52,16 @@ class SelfieListViewController:
             locationManager.requestWhenInUseAuthorization()
         default:
             locationManager.requestLocation()
+        }
+    }
+    
+    @objc
+    func createNewSelfie()
+    {
+        let shouldGetLocation = UserDefaults.standard.bool(forKey: SettingsKey.saveLocation.rawValue)
+        if shouldGetLocation
+        {
+            setLocation()
         }
         
         let imagePicker = UIImagePickerController()

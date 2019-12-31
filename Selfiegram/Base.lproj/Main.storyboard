@@ -129,15 +129,50 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0FN-I1-NAW">
-                                                    <rect key="frame" x="345" y="7" width="51" height="31"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0FN-I1-NAW">
+                                                    <rect key="frame" x="350" y="13" width="51" height="18"/>
+                                                    <connections>
+                                                        <action selector="locationSwitchToggled:" destination="5Uk-Wx-Mzf" eventType="valueChanged" id="I7R-Hu-wgx"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="0FN-I1-NAW" secondAttribute="trailing" constant="20" id="2Az-2X-bjk"/>
+                                                <constraint firstItem="0FN-I1-NAW" firstAttribute="top" secondItem="114-e7-FDt" secondAttribute="topMargin" constant="2" id="Ciy-uR-a3e"/>
                                                 <constraint firstItem="APe-Jj-Kne" firstAttribute="leading" secondItem="114-e7-FDt" secondAttribute="leadingMargin" constant="2" id="Mbz-rL-6Ud"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="APe-Jj-Kne" secondAttribute="bottom" constant="2" id="Pev-oX-I28"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0FN-I1-NAW" secondAttribute="bottom" constant="2" id="bvn-F5-g0m"/>
+                                                <constraint firstItem="0FN-I1-NAW" firstAttribute="trailing" secondItem="114-e7-FDt" secondAttribute="trailingMargin" constant="5" id="lf0-oG-fke"/>
                                                 <constraint firstItem="APe-Jj-Kne" firstAttribute="top" secondItem="114-e7-FDt" secondAttribute="topMargin" constant="2" id="qg0-v6-FBp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KRg-pR-jS1">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KRg-pR-jS1" id="moU-EP-Sog">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me at 10am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7si-8L-inh">
+                                                    <rect key="frame" x="22" y="13" width="151" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ivf-74-Jn5">
+                                                    <rect key="frame" x="350" y="13" width="51" height="18"/>
+                                                    <connections>
+                                                        <action selector="reminderSwitchToggled:" destination="5Uk-Wx-Mzf" eventType="valueChanged" id="k6Q-6W-cxT"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7si-8L-inh" firstAttribute="top" secondItem="moU-EP-Sog" secondAttribute="topMargin" constant="2" id="Btd-VD-ueb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ivf-74-Jn5" secondAttribute="bottom" constant="2" id="VV5-7x-fzI"/>
+                                                <constraint firstItem="Ivf-74-Jn5" firstAttribute="top" secondItem="moU-EP-Sog" secondAttribute="topMargin" constant="2" id="Zng-rq-kHe"/>
+                                                <constraint firstItem="7si-8L-inh" firstAttribute="leading" secondItem="moU-EP-Sog" secondAttribute="leadingMargin" constant="2" id="f8b-FI-7YN"/>
+                                                <constraint firstItem="Ivf-74-Jn5" firstAttribute="trailing" secondItem="moU-EP-Sog" secondAttribute="trailingMargin" constant="5" id="qRY-aO-tJD"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7si-8L-inh" secondAttribute="bottom" constant="2" id="zLs-t5-31C"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -150,6 +185,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="7tA-e7-f1b"/>
+                    <connections>
+                        <outlet property="locationSwitch" destination="0FN-I1-NAW" id="fSB-lk-u0O"/>
+                        <outlet property="reminderSwitch" destination="Ivf-74-Jn5" id="RQ7-QD-yDn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSa-h1-vOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
