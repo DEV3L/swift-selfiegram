@@ -120,7 +120,7 @@ final class SelfieStore
         
         imageCache[id] = image
     }
-        
+    
     func listSelfies() throws -> [Selfie]
     {
         let contents = try FileManager.default.contentsOfDirectory(at: self.docuemntsFolder, includingPropertiesForKeys: nil)

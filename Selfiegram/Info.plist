@@ -63,18 +63,23 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>We use the camera to take those sweet, sweet selfies</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>We use the library to save your sweet, sweet selfies</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>We use your location to add location information to those sweet, sweet selfies</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>We use the camera to take those sweet, sweet selfies</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>We use the library to save your sweet, sweet selfies</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use your location to add location information to those sweet, sweet selfies</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Quicksand-Regular.otf</string>
+		<string>Lobster_1.3.otf</string>
 	</array>
 </dict>
 </plist>

@@ -6,7 +6,7 @@ class SelfieDetailViewController: UIViewController {
     @IBOutlet weak var dateCreatedLabel: UILabel!
     @IBOutlet weak var selfieImageView: UIImageView!
     @IBOutlet weak var mapView: MKMapView!
- 
+    
     @IBAction func doneButtonTapped(_ sender: Any) {
         self.selfieNameField.resignFirstResponder()
         guard let selfie = selfie else
@@ -79,4 +79,3 @@ class SelfieDetailViewController: UIViewController {
         return dateFormatter
     }()
 }
-
