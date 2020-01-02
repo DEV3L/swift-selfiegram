@@ -26,6 +26,7 @@
 		E9854E0923AD9815004FC95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9854E0723AD9815004FC95D /* LaunchScreen.storyboard */; };
 		E9854E1423AD9815004FC95D /* SelfieStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */; };
 		E9854E1F23AD9815004FC95D /* SelfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */; };
+		E9E4419A23BD6E3700B10BBA /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		E9854E1A23AD9815004FC95D /* SelfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramUITests.swift; sourceTree = "<group>"; };
 		E9854E2023AD9815004FC95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				E9854E0A23AD9815004FC95D /* Info.plist */,
 				E9178BB423B9A40F00A7C07A /* SettingsTableViewController.swift */,
 				E9178BBC23BC4A1A00A7C07A /* Theme.swift */,
+				E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */,
 			);
 			path = Selfiegram;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9854DFB23AD9813004FC95D /* AppDelegate.swift in Sources */,
+				E9E4419A23BD6E3700B10BBA /* CaptureViewController.swift in Sources */,
 				E933B2F623AFDF8000DA3A46 /* SelfieStore.swift in Sources */,
 				E9178BB523B9A40F00A7C07A /* SettingsTableViewController.swift in Sources */,
 				E9854DFD23AD9813004FC95D /* SceneDelegate.swift in Sources */,

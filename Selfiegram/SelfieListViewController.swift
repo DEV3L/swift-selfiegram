@@ -63,6 +63,24 @@ class SelfieListViewController:
             setLocation()
         }
         
+        //        guard let navigation = self.storyboard?
+        //            .instantiateViewController(identifier: "CaptureSession")
+        //            as? UINavigationController,
+        //            let capture = navigation.viewControllers.first
+        //                as? CaptureViewController
+        //            else {
+        //                fatalError("Failed to create the capture view controller")
+        //        }
+        //
+        //        capture.completion = {(image: UIImage?) in
+        //            if let image = image {
+        //                self.newSelfieTaken(image: image)
+        //            }
+        //            self.dismiss(animated: true, completion: nil)
+        //        }
+        //
+        //        self.present(navigation, animated: true, completion: nil)
+        //
         let imagePicker = UIImagePickerController()
         if UIImagePickerController.isSourceTypeAvailable(.camera)
         {
@@ -237,23 +255,4 @@ class SelfieListViewController:
         
         return [delete, share]
     }
-    
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            let selfieToRemove = selfies[indexPath.row]
-//            do
-//            {
-//                try SelfieStore.shared.delete(selfie: selfieToRemove)
-//                selfies.remove(at: indexPath.row)
-//                tableView.deleteRows(at: [indexPath], with: .fade)
-//            }
-//            catch
-//            {
-//                let title = selfieToRemove.title
-//                showError(message: "Failed to delete \(title)")
-//            }
-//        } else if editingStyle == .insert {
-//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-//        }
-//    }
 }
