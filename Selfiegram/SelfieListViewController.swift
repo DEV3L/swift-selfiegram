@@ -63,45 +63,23 @@ class SelfieListViewController:
             setLocation()
         }
         
-        //        guard let navigation = self.storyboard?
-        //            .instantiateViewController(identifier: "CaptureSession")
-        //            as? UINavigationController,
-        //            let capture = navigation.viewControllers.first
-        //                as? CaptureViewController
-        //            else {
-        //                fatalError("Failed to create the capture view controller")
-        //        }
-        //
-        //        capture.completion = {(image: UIImage?) in
-        //            if let image = image {
-        //                self.newSelfieTaken(image: image)
-        //            }
-        //            self.dismiss(animated: true, completion: nil)
-        //        }
-        //
-        //        self.present(navigation, animated: true, completion: nil)
-        //
-        let imagePicker = UIImagePickerController()
-        if UIImagePickerController.isSourceTypeAvailable(.camera)
-        {
-            imagePicker.sourceType = .camera
-            if UIImagePickerController.isCameraDeviceAvailable(.front)
-            {
-                imagePicker.cameraDevice = .front
-            }
-            else if UIImagePickerController.isCameraDeviceAvailable(.rear)
-            {
-                imagePicker.cameraDevice = .rear
-            }
-        }
-        else
-        {
-            imagePicker.sourceType = .photoLibrary
+        guard let navigation = self.storyboard?
+            .instantiateViewController(identifier: "CaptureSession")
+            as? UINavigationController,
+            let capture = navigation.viewControllers.first
+                as? CaptureViewController
+            else {
+                fatalError("Failed to create the capture view controller")
         }
         
-        imagePicker.delegate = self
-        self.present(imagePicker, animated: true, completion: nil)
+        capture.completion = {(image: UIImage?) in
+            if let image = image {
+                self.newSelfieTaken(image: image)
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
         
+        self.present(navigation, animated: true, completion: nil)
     }
     
     func showError(message: String)

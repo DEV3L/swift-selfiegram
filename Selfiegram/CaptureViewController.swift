@@ -2,13 +2,12 @@ import UIKit
 import AVKit
 
 class CaptureViewController: UIViewController, AVCapturePhotoCaptureDelegate {
-
+    
     @IBOutlet weak var cameraPreview: PreviewView!
     
     @IBAction func close(_ sender: Any) {
         self.completion?(nil)
     }
-    
     @IBAction func takeSelfie(_ sender: Any) {
         guard let videoConnection = photoOutput.connection(with: AVMediaType.video) else
         {
@@ -23,8 +22,8 @@ class CaptureViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     override func viewDidLoad() {
         let discovery = AVCaptureDevice.DiscoverySession(deviceTypes:
-        [.builtInTrueDepthCamera, .builtInDualCamera, .builtInWideAngleCamera],
-        mediaType: .video, position: .unspecified)
+            [.builtInWideAngleCamera],
+                                                         mediaType: .video, position: .front)
         
         guard let captureDevice = discovery.devices.first else {
             NSLog("No capture devices available")
