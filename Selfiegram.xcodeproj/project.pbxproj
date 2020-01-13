@@ -10,7 +10,6 @@
 		73CE23DC80DD6672BCE052FE /* Pods_SelfiegramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E7F6DA314F4721E5A315A8 /* Pods_SelfiegramTests.framework */; };
 		792237A841940C14994F70CF /* Pods_Selfiegram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9934DD4F468CED1EF1A0E0AF /* Pods_Selfiegram.framework */; };
 		D50FE0A0A5D8E7B830ABF189 /* Pods_Selfiegram_SelfiegramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB7BF5C4C2C0EB24610BA41 /* Pods_Selfiegram_SelfiegramUITests.framework */; };
-		E90345D323AFF8560026D9C2 /* SelfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */; };
 		E9178BB523B9A40F00A7C07A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9178BB423B9A40F00A7C07A /* SettingsTableViewController.swift */; };
 		E9178BBD23BC4A1A00A7C07A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9178BBC23BC4A1A00A7C07A /* Theme.swift */; };
 		E9178BBE23BC4C7500A7C07A /* Quicksand-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9178BB823BC49DE00A7C07A /* Quicksand-Bold.otf */; };
@@ -26,6 +25,8 @@
 		E9854E0923AD9815004FC95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9854E0723AD9815004FC95D /* LaunchScreen.storyboard */; };
 		E9854E1423AD9815004FC95D /* SelfieStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */; };
 		E9854E1F23AD9815004FC95D /* SelfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */; };
+		E989257523CBE816003EEA0D /* OverlayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E989257423CBE816003EEA0D /* OverlayStore.swift */; };
+		E989257723CBF559003EEA0D /* DataLoadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E989257623CBF559003EEA0D /* DataLoadingTests.swift */; };
 		E9E4419A23BD6E3700B10BBA /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +57,6 @@
 		9EB7BF5C4C2C0EB24610BA41 /* Pods_Selfiegram_SelfiegramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Selfiegram_SelfiegramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82514AAAD6E42EF092D6B1A /* Pods-Selfiegram-SelfiegramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Selfiegram-SelfiegramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Selfiegram-SelfiegramUITests/Pods-Selfiegram-SelfiegramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5751593DB7191D4A98B5DF8 /* Pods-SelfiegramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelfiegramTests.debug.xcconfig"; path = "Target Support Files/Pods-SelfiegramTests/Pods-SelfiegramTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramTests.swift; sourceTree = "<group>"; };
 		E9178BB423B9A40F00A7C07A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		E9178BB723BC49CA00A7C07A /* Lobster_1.3.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lobster_1.3.otf; path = ../../../../../../Downloads/Lobster/Lobster_1.3.otf; sourceTree = "<group>"; };
 		E9178BB823BC49DE00A7C07A /* Quicksand-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.otf"; path = "../../../../../../Downloads/quicksand/Quicksand-Bold.otf"; sourceTree = "<group>"; };
@@ -78,6 +78,8 @@
 		E9854E1A23AD9815004FC95D /* SelfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9854E1E23AD9815004FC95D /* SelfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiegramUITests.swift; sourceTree = "<group>"; };
 		E9854E2023AD9815004FC95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E989257423CBE816003EEA0D /* OverlayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayStore.swift; sourceTree = "<group>"; };
+		E989257623CBF559003EEA0D /* DataLoadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingTests.swift; sourceTree = "<group>"; };
 		E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 				E9178BB423B9A40F00A7C07A /* SettingsTableViewController.swift */,
 				E9178BBC23BC4A1A00A7C07A /* Theme.swift */,
 				E9E4419923BD6E3700B10BBA /* CaptureViewController.swift */,
+				E989257423CBE816003EEA0D /* OverlayStore.swift */,
 			);
 			path = Selfiegram;
 			sourceTree = "<group>";
@@ -189,7 +192,7 @@
 			children = (
 				E9854E1323AD9815004FC95D /* SelfieStoreTests.swift */,
 				E9854E1523AD9815004FC95D /* Info.plist */,
-				E90345D223AFF8560026D9C2 /* SelfiegramTests.swift */,
+				E989257623CBF559003EEA0D /* DataLoadingTests.swift */,
 			);
 			path = SelfiegramTests;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				E9178BB523B9A40F00A7C07A /* SettingsTableViewController.swift in Sources */,
 				E9854DFD23AD9813004FC95D /* SceneDelegate.swift in Sources */,
 				E9854DFF23AD9813004FC95D /* SelfieListViewController.swift in Sources */,
+				E989257523CBE816003EEA0D /* OverlayStore.swift in Sources */,
 				E9854E0123AD9813004FC95D /* SelfieDetailViewController.swift in Sources */,
 				E9178BBD23BC4A1A00A7C07A /* Theme.swift in Sources */,
 			);
@@ -424,7 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90345D323AFF8560026D9C2 /* SelfiegramTests.swift in Sources */,
+				E989257723CBF559003EEA0D /* DataLoadingTests.swift in Sources */,
 				E9854E1423AD9815004FC95D /* SelfieStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
